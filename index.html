@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="paulo eduardo souza de melos">
+        <meta name="keywords" content="cronometro,temporizador,unifal,projeto javascript,frontend">
+        <meta name="descriptions" content="aplicação de cronometro/temporizador feita em javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+        <link rel="icon" href="./icon/icone.png">
+        <title>Timer e Temporizador Online</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="menu-nav">
+                <h2 class="logo">TimerOnline.com <i class="fa-regular fa-clock"></i></h2>
+                <ul class="ul-nav">
+                    <li class="dropdown" data-dropdown>
+                        <a class="dropdown-a" href="#">Ferramentas</a>
+                        <ul class="ul-dropdown">
+                            <li class="li-dropdown"><a href="index.html">Temporizador</a></li>
+                            <li class="li-dropdown"><a href="">Horários</a></li>
+                            <li class="li-dropdown"><a href="https://github.com/pauloesmelos/timer-stopwatch-javascript">Contribua</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/pauloeduardomelos/" target="_blank">Linkedin</a></li>
+                    <li><i class="fa-solid fa-moon"></i></li>
+                    <li><a href="https://github.com/pauloesmelos" target="_blank">DEV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-temporizador">
+                <div class="temporizador">
+                    <h1 class="titulo">Temporizador personalizado</h1>
+                    <button data-novo>Novo temporizador</button>
+                </div>
+                <div class="input-numeros">
+                    <input data-numero placeholder="00:00" value="0">
+                    <div class="div-button">
+                        <button class="btn" data-iniciar>Iniciar</button>
+                        <button class="btn" data-pausar>Pausar</button>
+                        <details class="help">
+                            <summary><i class="fa-solid fa-circle-info"></i></summary>
+                            <p class="help-text">Resetar = <span>double click</span> no botão Pausar</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <div class="div-titulo-especifico">
+                <h1 class="titulo">Temporizador específico</h1>
+            </div>
+            <section class="section-especifico flex">
+                <div class="temporizador-especifico1 block">
+                    <h2 class="subtitulo">Definir um temporizador: minutos</h2>
+                    <hr>
+                    <div class="block-minutos">
+                        <a data-minutos="m" href="#">Temporizador 1 minutos</a>
+                        <a data-minutos="m" href="#">Temporizador 3 minutos</a>
+                        <a data-minutos="m" href="#">Temporizador 5 minutos</a>
+                        <a data-minutos="m" href="#">Temporizador 10 minutos</a>
+                        <a data-minutos="m" href="#">Temporizador 15 minutos</a>
+                        <a data-minutos="m" href="#">Temporizador 30 minutos</a>
+                    </div>
+                </div>
+
+                <div class="temporizador-especifico2 block">
+                    <h2 class="subtitulo">Definir um temporizador: segundos</h2>
+                    <hr>
+                    <div class="block-minutos">
+                        <a data-segundos="s" href="#">Temporizador 2 segundos</a>
+                        <a data-segundos="s" href="#">Temporizador 10 segudos</a>
+                        <a data-segundos="s" href="#">Temporizador 20 segudos</a>
+                        <a data-segundos="s" href="#">Temporizador 30 segudos</a>
+                        <a data-segundos="s" href="#">Temporizador 40 segudos</a>
+                        <a data-segundos="s" href="#">Temporizador 60 segudos</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tools">
+                <div class="more-tools">
+                    <div class="christmas tool">
+                        <a data-tools class="button-more-tools">Dias até o Natal</a>
+                    </div>
+                    <div class="hour-brazil tool">
+                        <a data-tools class="button-more-tools">Horário de Brasília</a>
+                    </div>
+                    <div class="hour-pc tool">
+                        <a data-tools class="button-more-tools">Horário do seu PC</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <span class="texto 0">
+                       <p class="titulo"> Faltam 
+                            <span class="day-until"> </span> dias para o Natal <i class="fa-solid fa-gift"></i>
+                       </p>
+                    </span>
+
+                    <span class="texto 1">
+                        <p class="titulo"><span class="br-time"></span></p>
+                        <details class="help">
+                            <summary><i class="fa-solid fa-circle-info"></i></summary>
+                            <p class="help-text">Horário assíncrono = <span>F5</span> para atualizar o horário</p>
+                        </details>
+                    </span>
+
+                    <span class="texto 2">
+                        <p class="titulo"><span class="pc-time"></span></p>
+                        <details class="help">
+                            <summary><i class="fa-solid fa-circle-info"></i></summary>
+                            <p class="help-text">Horário assíncrono = <span>F5</span> para atualizar o horário</p>
+                        </details>
+                    </span>
+                </div>
+            </section>
+
+        </main>
+        <section class="section-modal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h1 class="titulo-modal">Editar o temporizador conforme seus desejos</h1>
+                    <button data-fecharmodal>X</button>
+                </div>
+                <div class="modal-corpo">
+                    <form action="" method="post">
+                        <label for="horas">Horas</label>
+                        <input data-modal-horas id="horas" type="number" min="1" max="24">
+
+                        <label for="minutos">Minutos</label>
+                        <input data-modal-minutos id="minutos" type="number" min="1" max="59">
+
+                        <label for="segundos">Segundos</label>
+                        <input data-modal-segundos id="segundos" type="number" min="1" max="59">
+                    </form>
+                </div>
+                <div class="modal-buttons">
+                    <button data-cancelarmodal class="btn">Cancelar</button>
+                    <button data-iniciar-modal class="btn">Iniciar</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2022 desenvolvido por paulo melos | Timer online | <span class="contato"><a href="https://github.com/pauloesmelos" target="_blank">Contato</a></span></p>
+        </footer>
+        <script type="module" src="script.js"> </script><!--type="module" se n da erro-->
+    </body>
+</html>

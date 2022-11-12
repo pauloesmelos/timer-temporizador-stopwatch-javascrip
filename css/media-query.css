@@ -1,0 +1,35 @@
+@media(max-width: 850px){
+    .logo{
+        left: 0;
+    }
+    .ul-nav{
+        display: block;
+        margin-top: 3rem;
+    }
+    .ul-nav li{
+        margin-bottom: 1rem;
+    }
+    /*.more-tools*/
+    .more-tools{
+        display: block;
+        text-align: center;
+    }
+    .tool{
+        margin-bottom: 1.4rem;
+    }
+    .flex{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .temporizador-especifico1,.temporizador-especifico2{
+        padding: 0;
+    }
+}
+@media(max-width: 1200px){
+    label{
+        display: block;
+    }
+    .modal{
+        height: 60vh;
+    }
+}

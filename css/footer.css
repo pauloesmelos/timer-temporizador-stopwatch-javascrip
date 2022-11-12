@@ -1,0 +1,27 @@
+.footer{
+    padding: 1rem;
+    background-color: #4F93F0;
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer p{
+    color: #fff;
+    font-weight: lighter;
+}
+.contato a{
+    color: #222;
+}
+.contato a:hover{
+    color: rgb(156, 68, 238);
+}
+/*js*/
+.footer.dark{
+    background-color: #222;
+}
+.footer.dark .contato a{
+    color:#4F93F0;
+}

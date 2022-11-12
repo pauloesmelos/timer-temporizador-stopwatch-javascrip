@@ -1,0 +1,67 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(247, 244, 241);
+}
+
+/*inicio*/
+.logo{
+    position: absolute;
+    font-size: 1.8rem;
+    font-family: monospace;
+    margin-left: 5%;
+    color: #fff;
+    font-weight: lighter;
+}
+.logo:hover{
+    color:rgb(113, 255, 85);
+    cursor: pointer;
+}
+.menu-nav{
+    position: relative;    
+    background-color: #4F93F0;
+    padding: 2rem 1rem;
+}
+.ul-nav{
+    display: flex;
+    justify-content: right;
+    margin-right: 5rem;
+}
+.ul-nav li{
+    list-style-type: none;
+    margin-right: 2rem;
+}
+.ul-nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.ul-nav li a:hover{
+    color: #222;
+    transition: .7s;
+}
+.fa-moon{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.fa-moon:hover{
+    cursor: pointer;
+    color: #222;
+}
+/*js*/
+.menu-nav.dark{
+    background-color: #222;
+}
+.menu-nav.dark .fa-moon:hover{
+    color: #4F93F0;
+}
+body.dark{
+    background-color: rgb(70, 68, 68);
+}
+body.dark .ul-nav li a:hover{
+    color: rgb(113, 255, 85);
+}

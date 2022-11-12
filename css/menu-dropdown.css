@@ -1,0 +1,54 @@
+[data-dropdown]{
+    position: relative;/**/
+}
+.ul-dropdown{
+    background-color: #4F93F0;
+    padding: 1rem;
+    box-shadow: 0 .2rem .5rem .2rem #222;
+    border: 2px solid #222;
+    display: none;
+    position: absolute;
+    text-align: left;
+    z-index: 200;/*ATENÇÃO:z-index maior ou setar valor de height pro li resolve o problema do dropdown fechar sozinho !!!!*/
+}
+.ul-dropdown::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #4F93F0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    top: -5%;
+}
+.li-dropdown{
+    padding: .5rem;
+}
+.li-dropdown a{
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+/*hover*/
+[data-dropdown]:hover .ul-dropdown,[data-dropdown].ativo .ul-dropdown{
+    display: block;
+    animation: show-dropdown .5s forwards;
+}
+@keyframes show-dropdown{
+    from{
+        opacity: 0;
+        transform: translate3d(0,5rem,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+/*js*/
+body.dark .ul-dropdown{
+    background-color: rgb(70, 68, 68);
+}
+body.dark .ul-dropdown::after{
+    border-bottom: 12px solid rgb(70, 68, 68);
+}
