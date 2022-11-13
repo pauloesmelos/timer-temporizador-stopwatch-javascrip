@@ -20,8 +20,8 @@
 <br>
 
 <h1>🎬 GIF</h1>
-<img src="https://user-images.githubusercontent.com/74941958/201502091-65acf385-7e60-4e88-84ea-8e8de15af1c4.gif">
+<img src="https://user-images.githubusercontent.com/74941958/201502091-65acf385-7e60-4e88-84ea-8e8de15af1c4.gif" height="300px" width="800px">
 <br>
 <br>
 <hr>
-<h1>♾️ Acesse a aplicação <a href="https://pauloesmelos.github.io/timer-temporizador-stopwatch-javascript/">aqui </a>ou no link contido no About</h1>
+<h1>Para acessar a aplicação <a href="https://pauloesmelos.github.io/timer-temporizador-stopwatch-javascript/">aqui </a>ou no link contido no About :) </h1>
