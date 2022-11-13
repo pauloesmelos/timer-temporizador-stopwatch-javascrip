@@ -34,8 +34,14 @@ addedDayUntilChristmas.innerHTML =  transformDay(now,christmas);
 let textBrasiliaTime = document.querySelector('.br-time');
 let brasiliaTimeHour = date.getUTCHours() - 3;
 let brasiliaTimeMinutes = date.getUTCMinutes() - 4;
+let h = [24,23,22,21,20];
 function addedBrasiliaTime(){
-textBrasiliaTime.innerHTML = `${brasiliaTimeHour} horas : ${brasiliaTimeMinutes} minutos`;
+    if(brasiliaTimeHour < 0){
+        brasiliaTimeHour = h[brasiliaTimeHour * -1];
+        console.log(brasiliaTimeHour);
+    }
+    textBrasiliaTime.innerHTML = `${brasiliaTimeHour} horas : ${brasiliaTimeMinutes} minutos`;
+    
 }
 addedBrasiliaTime();
 

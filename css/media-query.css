@@ -33,3 +33,13 @@
         height: 60vh;
     }
 }
+@media(max-width: 320px){
+    [data-tools]{
+        max-width: 10%;
+        display: block;
+        
+    }
+    .logo{
+        position: relative;
+    }
+}
