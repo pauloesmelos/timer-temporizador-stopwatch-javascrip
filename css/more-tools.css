@@ -6,7 +6,7 @@
     width: 100%;
 }
 .tool{
-    max-width: 20rem;
+    max-width: 100%;
 }
 [data-tools]{
     padding: .7rem 5rem;
